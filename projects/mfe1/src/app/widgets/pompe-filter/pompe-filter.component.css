@@ -1,0 +1,28 @@
+h3 {
+  display: flex;
+  color: #6e6e6e; 
+  margin-right: 20px;
+}
+.button{
+  appearance: none; 
+  background-color: #ffffff; 
+  border: 2px solid #ccc; 
+  border-radius: 15px; 
+  padding: 8px 12px; 
+  font-size: 14px solid; 
+  color: gray;
+  outline: none;
+ margin-right: 10px;
+}
+
+.header {
+  display: flex;
+  color: #6e6e6e; 
+}
+.widget-image {
+  width: 20px; 
+  height: auto; 
+  margin-right: 10px; 
+  margin-left: 10px;
+  
+}  

@@ -1,0 +1,48 @@
+.mat-toolbar { 
+    background: #22346c;
+  }
+  
+  .mat-sidenav-container {
+    background-color: white;
+  }
+  
+  .mat-sidenav {
+    background-color: white; 
+    background:#DCDCDC;
+  
+  }
+  .mat-sidenav a:hover {
+    color: #22346c;
+  
+  }
+  .mat-list-item{
+    color :gray ;
+    font-size: 15px;
+    font-style:normal;
+    
+  }
+
+  
+  img{
+    padding: 5px;
+    width: 150px;
+  }
+
+  p { 
+    font-size: small;
+    color: white;
+  }
+  
+  .rightside {
+    margin-left: auto;
+  }
+
+  h1{
+    color: white; 
+    margin-left: 10%;
+  }
+  .example-icon{
+    color: white;
+    background-color:#22346c;
+    
+  }

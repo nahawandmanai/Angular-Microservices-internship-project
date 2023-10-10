@@ -1,0 +1,26 @@
+<div class="table-container">
+<table>
+    <thead>
+      <tr>
+        <th>Nom</th>
+        <th> Refuelling date <mat-icon style="font-size: 16px;">filter_alt</mat-icon></th>
+        <th>Carburant existant<mat-icon style="font-size: 16px;">filter_alt</mat-icon></th>
+        <th>Quantité ajoutée (m²)<mat-icon style="font-size: 16px;">filter_alt</mat-icon></th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of datacells">
+        <td>{{ item.nom }}</td>
+        <td>{{ item.refuelling_date | date:'dd/MM/yyyy HH:mm:ss' }}</td>
+        <td>{{ item.Carburant_existant }} </td>
+        <td>{{ item.Quantite }}</td>
+        <td>
+          <i><mat-icon style="font-size: 16px;"> edit </mat-icon></i>  
+          <i><mat-icon style="font-size: 16px;"> content_copy </mat-icon> </i> 
+        </td>
+
+      </tr>
+    </tbody>
+  </table>
+<div class="table-container">

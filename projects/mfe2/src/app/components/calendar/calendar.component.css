@@ -1,0 +1,21 @@
+.material-style-datepicker {
+    appearance: none; 
+    background-color: #ffffff; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    padding: 8px 12px; 
+    font-size: 14px; 
+    color: #333;
+    outline: none;
+  }
+  .date-container {
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+  }
+  
+  .date {
+    text-align: center; 
+  }
+  

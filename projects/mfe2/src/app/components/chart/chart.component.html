@@ -1,0 +1,21 @@
+<div class="page-container">
+<div class="chart-container">
+  <dx-chart
+  id="chart"
+  class="custom-chart"
+  title="volume by date"
+  [dataSource]="data">
+  <dxo-legend [visible]="false"></dxo-legend>
+  <dxi-series type="bar" argumentField="date" valueField="capacity"></dxi-series>
+  <dxo-argument-axis [tickInterval]="10">
+    <dxo-title text="Capacité"></dxo-title> 
+    <dxo-label>
+      <dxo-format type="decimal"></dxo-format>
+    </dxo-label>
+  </dxo-argument-axis>
+  <dxo-argument-axis>
+    <dxo-title text="Date"></dxo-title> 
+  </dxo-argument-axis>
+  </dx-chart>
+</div>
+</div>

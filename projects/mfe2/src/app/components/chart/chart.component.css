@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+.chart-container {
+  height: 200px;
+}
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    height: 80vh; 
+  }
+
+  .chart-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+
+  .custom-chart {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+   
+  }

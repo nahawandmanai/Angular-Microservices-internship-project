@@ -1,0 +1,63 @@
+<div class="header" [ngClass]="{'small-screen': isSmallScreen, 'large-screen': !isSmallScreen}">
+<h3>États des citernes</h3>
+<div class="circle-form"></div>
+
+<mat-form-field appearance="fill" class="mat-chip-like-label">
+
+    <mat-label *ngIf="!hideLabelTouteLesCiternes" class="text"> <img src="./assets/icon-volume-filtre.svg" alt="Image 3" class="widget-image">Toutes les citernes</mat-label>
+    <select matNativeControl [disabled]="disableSelect.value" [(ngModel)]="selectedOptionTouteLesCiternes" (change)="hideLabelTouteLesCiternes = true">
+      <option value="" selected></option>
+      <option value="1">1</option>
+      <option value="2" >2</option>
+      <option value="3">3</option>
+      <option value="4" disabled>4</option>
+    </select>
+  </mat-form-field>
+  
+
+
+<mat-form-field appearance="fill" class="mat-chip-like-label">
+    <mat-label *ngIf="!hideLabelCapacite" class ="title"> <img src="./assets/icon-volume-filtre.svg" alt="Image 3" class="widget-image">Capacité</mat-label>
+    <select matNativeControl [disabled]="disableSelect.value" [(ngModel)]="selectedOptionCapacite" (change)="hideLabelCapacite = true">
+      <option value="" selected></option>
+      <option value="1">1</option>
+      <option value="2" >2</option>
+      <option value="3">3</option>
+      <option value="4" disabled>4</option>
+    </select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="mat-chip-like-label">
+  <mat-label *ngIf="!hideLabelNature"> <img src="./assets/icon-carburant-filtre.svg" alt="Image 1" class="widget-image">Nature</mat-label>
+    <select matNativeControl [disabled]="disableSelect.value"  [(ngModel)]="selectedOptionNature" (change)="hideLabelNature = true">
+      <option value="" selected></option>
+      <option value="1">1</option>
+      <option value="2" >2</option>
+      <option value="3">3</option>
+      <option value="4" disabled>4</option>
+    </select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="mat-chip-like-label">
+    <mat-label *ngIf="!hideLabelDate"><img src="./assets/icon-date.svg" alt="Image 2" class="widget-image">Date</mat-label>
+    <select matNativeControl [disabled]="disableSelect.value" [(ngModel)]="selectedOptionDate" (change)="hideLabelDate = true">
+      <option value="" selected></option>
+      <option value="1">1</option>
+      <option value="2" >2</option>
+      <option value="3">3</option>
+      <option value="4" disabled>4</option>
+    </select>
+</mat-form-field>
+
+<mat-form-field appearance="fill" class="mat-chip-like-label">
+    <mat-label *ngIf="!hideLabelSite"><img src="./assets/map.svg" alt="Image 2" class="widget-image">Site</mat-label>
+    <select matNativeControl [disabled]="disableSelect.value" [(ngModel)]="selectedOptionSite" (change)="hideLabelSite = true">
+      <option value="" selected></option>
+      <option value="1">1</option>
+      <option value="2" >2</option>
+      <option value="3">3</option>
+      <option value="4" disabled>4</option>
+    </select>
+</mat-form-field>
+
+</div>

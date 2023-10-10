@@ -1,0 +1,23 @@
+<div class="dialog-container">
+
+    <div class="button-container">
+      <button class="circular-button-battery" mat-fab aria-label="icon button with a battery_5_bar icon">
+        <mat-icon><img src="./assets/icon-volume-filtre.svg" alt="Image 3" class="widget-image"></mat-icon>
+      </button>
+  
+    <h2>Ajouter une pompe </h2>
+    </div>
+  
+    <label for="id">ID:</label>
+    <input type="text" id="id" [(ngModel)]="id">
+  
+    <label for="nature">Nature:</label>
+    <input type="text" id="nature" [(ngModel)]="nature">
+  
+    <label for="site">Site:</label>
+    <input type="text" id="site" [(ngModel)]="site">
+  
+    <button class="button-cancel" (click)="cancel()">Cancel</button>
+    <button class="button-ok" (click)="ok()">Confirmer</button>
+</div>
+  

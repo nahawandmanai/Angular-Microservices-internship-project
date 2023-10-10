@@ -1,0 +1,30 @@
+<section>  
+    <div class="button-row">    
+      <div class="button-container">
+        <button class="circular-button-battery" mat-fab aria-label="icon button with a battery_5_bar icon" (click)="showHiddenIcons()">
+          <mat-icon><img src="./assets/icon-volume-pompe.svg" alt="Image 3" class="widget-image"></mat-icon>
+        </button>
+      </div>
+      
+      <div class="hidden-icons-container">
+        <div class="button-container hidden-icon" *ngIf="showIcons">   
+          <button class="circular-button" mat-fab color="warn" aria-label="icon button with an add icon" (click)="openDialog()">
+            <mat-icon class="custom-icon"> add </mat-icon>
+          </button>
+        </div>
+  
+        <div class="button-container hidden-icon" *ngIf="showIcons">
+          <button class="circular-button" mat-fab disabled color="accent" aria-label="icon button with a create icon">
+            <mat-icon class="custom-icon">create</mat-icon>
+          </button>
+        </div>
+  
+        <div class="button-container hidden-icon" *ngIf="showIcons">
+          <button class="circular-button" mat-fab disabled color="primary" aria-label="icon button with a delete icon">
+            <mat-icon class="custom-icon">delete</mat-icon>
+          </button>
+        </div>
+      </div>
+    </div>       
+</section>
+  

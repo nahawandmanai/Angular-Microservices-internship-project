@@ -1,0 +1,91 @@
+
+.dialog-container {
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  z-index: 9999; /* Ensure it appears on top */
+
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dialog-container h2 {
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+.dialog-container label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.dialog-container input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.dialog-container button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+ 
+}
+
+.dialog-container button:last-child {
+  margin-right: 0;
+}
+
+.dialog-container button.cancel-btn {
+  background-color: #ccc;
+}
+
+
+.modal-backdrop {
+  opacity: 0.6 !important; /*the background becomes dark*/
+}
+
+.button-ok{
+  color:black;
+  background-color: #ffce03;
+  
+}
+
+.button-cancel{
+  color:black;
+  
+}
+
+.circular-button-battery {  
+  background-color: #ffce03 ;   
+  opacity: 0.95;
+  border: transparent;
+  margin-right: 15px;
+  width: 40px; 
+  height: 40px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  outline: none;
+  border-radius: 50%;
+}
+
+.widget-image {
+  width: 24px; 
+  height: 24px; 
+  filter: brightness(0) invert(1) grayscale(1); 
+}  
+
+
+.button-container { 
+  display: flex; 
+ 
+}
+

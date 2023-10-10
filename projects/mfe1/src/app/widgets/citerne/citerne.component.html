@@ -1,0 +1,71 @@
+<head> 
+ 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+
+<!-- <div class="widget-container-add">
+
+<div class="widget-content">
+    <h3 class="widget-title">Citerne : {{ receivedData.id }}</h3> 
+    <img src="./assets/icon_citerne.svg" alt="Widget Image" class="widget_image">
+    <p class="widget-text">
+      <img src="./assets/icon-carburant.svg" alt="Image 1" class="widget-image"> Nature: {{ receivedData.nature }}<br>
+      <strong>Dernier ravitaillement</strong><br>
+      <img src="./assets/icon-date.svg" alt="Image 2" class="widget-image">08/06/2023 - 08:58<br>
+      <img src="./assets/icon-volume.svg" alt="Image 3" class="widget-image">Capacité: {{ receivedData.capacite }}<br>
+      Site: {{ receivedData.site }}<br>
+    </p>
+    
+</div>
+</div> -->
+
+<!-- <div class="widget-container">
+<div *ngFor="let tank of tanks" class="widget">
+  <div class ="widget-header">
+  <h3 class="widget-title">Citerne {{ tank.id }} : </h3>
+  <img src="./assets/icon_citerne.svg" alt="Widget Image" class="widget_image">
+</div>
+<div class ="widget-text"> 
+  <img src="./assets/icon-carburant.svg" alt="Image 1" class="widget-image"> {{ tank.nature }}<br>
+  <strong>Dernier ravitaillement</strong><br>
+  <img src="./assets/icon-date.svg" alt="Image 2" class="widget-image"> {{ tank.date | date:'dd/MM/yyyy - HH:mm' }} <br>
+  <img src="./assets/icon-volume.svg" alt="Image 3" class="widget-image"> {{tank.capacity}} <br>
+  
+  Site: {{ tank.site }}<br>
+</div>
+</div>
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div *ngFor="let tank of tanks" class="widget">
+     
+      <div class="col-md-5">
+       
+        <h3 class="widget-title">Citerne {{ tank.id }} : </h3>
+          <p>           
+            <img src="./assets/icon_citerne.svg" alt="Widget Image" class="widget_image">
+          </p>
+      </div>
+      <div class="col-md-7">
+      <div class="container">
+      <div class ="widget-text"> 
+            <img src="./assets/icon-carburant.svg" alt="Image 1" class="widget-image"> {{ tank.nature }}<br>
+            <strong>Dernier ravitaillement</strong><br>
+            <img src="./assets/icon-date.svg" alt="Image 2" class="widget-image"> {{ tank.date | date:'dd/MM/yyyy - HH:mm' }} <br>
+            <img src="./assets/icon-volume.svg" alt="Image 3" class="widget-image"> {{tank.capacity}} <br> 
+            Site: {{ tank.site }}<br>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+
+  
